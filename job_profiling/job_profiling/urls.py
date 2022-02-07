@@ -19,8 +19,8 @@ from api import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('job-profiles/', view=views.info_list), # get,post
-    path('fill-data/', view=views.fill_data),# post
+    #path('job-profiles/', view=views.info_list), # get,post
+    #path('fill-data/', view=views.fill_data),# post
     path('cluster/', view=views.get_cluster)# post
 ]
 
